@@ -1,6 +1,6 @@
 class Solution {
     public int countPrimes(int n) {
-         ArrayList<Integer> Num = new ArrayList<>();
+        int count=0;
         int arr [] = new int[n];
     if(n==0 || n==1)return 0;
          arr[0] = 1;
@@ -18,9 +18,9 @@ class Solution {
         }
         for(int i = 0;i<n;i++){
             if(arr[i] ==0){
-                Num.add(i);
+              count++;
             }
         }
-        return Num.size();
+        return count;
     }
 }
