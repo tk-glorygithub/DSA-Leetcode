@@ -1,25 +1,26 @@
-/*class Solution {
+class Solution {
     public int alternateDigitSum(int n) {
           int  sum = 0;
-        int count = 0;
-        for(int i = n; i>0;i/=10){
-            count++;
+       String str = Integer.toString(n);
+        for(int i = 0; i<str.length();i++){
+            int digit = str.charAt(i)-'0';
          
-            if( count%2 ==0){
+            if( i%2 ==0){
                // i = (-i);
-                sum +=(-i);
+                sum +=(digit);
             }
             else{
-               sum +=i;
+               sum -=digit;
             }
       
     }
     
         return sum;
 }
-} */
+} 
 
-class Solution {
+/*
+  class Solution {
     public int alternateDigitSum(int n) {
         int num = n;
         int count = 0;
@@ -42,4 +43,4 @@ class Solution {
         
         return sum;
     }
-}
+} */
