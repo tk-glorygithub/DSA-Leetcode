@@ -2,7 +2,7 @@ class Solution {
     public boolean isPowerOfTwo(int n) {
         if(n==1) return true;
           
-           for(long i =1;i<31;i++){
+           for(int i =1;i<31;i++){
              if( power(2,i) == n){
             return true;
             }
@@ -11,7 +11,7 @@ class Solution {
         return false;
        
     }
-    public static long power(long base ,long raise){
+    public static int power(int base ,int raise){
         if(raise ==0){
             return 1;
         }
