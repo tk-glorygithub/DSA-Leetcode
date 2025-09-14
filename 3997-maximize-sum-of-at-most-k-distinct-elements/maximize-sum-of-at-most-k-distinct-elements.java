@@ -7,7 +7,7 @@ class Solution {
         p.add(nums[i]);
 
        }
-	  System.out.println(p);
+	 // System.out.println(p);
 	  ArrayList<Integer> L = new ArrayList<>();
 	  Iterator<Integer> desc = p.descendingIterator();
 	  int cnt =0;
