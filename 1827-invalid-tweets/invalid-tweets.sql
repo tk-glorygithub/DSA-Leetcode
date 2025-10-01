@@ -3,3 +3,5 @@ select tweet_id
 from tweets
 where Length(content) >15;
 
+
+
